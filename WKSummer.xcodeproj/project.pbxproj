@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6348C1AE27AE863D304833A3 /* libPods-WKSummer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFAD1C7DCEDC0FAB00FCAE3 /* libPods-WKSummer.a */; };
 		6759CC001D5ECCA500521328 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6759CBFF1D5ECCA500521328 /* main.m */; };
 		6759CC031D5ECCA500521328 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6759CC021D5ECCA500521328 /* AppDelegate.m */; };
 		6759CC061D5ECCA500521328 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6759CC051D5ECCA500521328 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F0FB9C9C541BF3002C22E65 /* Pods-WKSummer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKSummer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKSummer/Pods-WKSummer.release.xcconfig"; sourceTree = "<group>"; };
 		6759CBFB1D5ECCA500521328 /* WKSummer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKSummer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6759CBFF1D5ECCA500521328 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6759CC011D5ECCA500521328 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		6759CC1F1D5ECCA500521328 /* WKSummerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKSummerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6759CC231D5ECCA500521328 /* WKSummerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSummerUITests.m; sourceTree = "<group>"; };
 		6759CC251D5ECCA500521328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFAD1C7DCEDC0FAB00FCAE3 /* libPods-WKSummer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKSummer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1703EC2C679B8171A56E369 /* Pods-WKSummer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKSummer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKSummer/Pods-WKSummer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6348C1AE27AE863D304833A3 /* libPods-WKSummer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154FACB41FD114813D1380A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1703EC2C679B8171A56E369 /* Pods-WKSummer.debug.xcconfig */,
+				2F0FB9C9C541BF3002C22E65 /* Pods-WKSummer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		250B3D051619E07B828AEAA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BFAD1C7DCEDC0FAB00FCAE3 /* libPods-WKSummer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6759CBF21D5ECCA500521328 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				6759CC171D5ECCA500521328 /* WKSummerTests */,
 				6759CC221D5ECCA500521328 /* WKSummerUITests */,
 				6759CBFC1D5ECCA500521328 /* Products */,
+				154FACB41FD114813D1380A3 /* Pods */,
+				250B3D051619E07B828AEAA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6759CC281D5ECCA500521328 /* Build configuration list for PBXNativeTarget "WKSummer" */;
 			buildPhases = (
+				4C8BD4D8202E266B37F1A777 /* [CP] Check Pods Manifest.lock */,
 				6759CBF71D5ECCA500521328 /* Sources */,
 				6759CBF81D5ECCA500521328 /* Frameworks */,
 				6759CBF91D5ECCA500521328 /* Resources */,
+				CEEEC902297D8CDFFA2812B6 /* [CP] Embed Pods Frameworks */,
+				76144CB70F1E26D9F306C28E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C8BD4D8202E266B37F1A777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76144CB70F1E26D9F306C28E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKSummer/Pods-WKSummer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEEEC902297D8CDFFA2812B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKSummer/Pods-WKSummer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6759CBF71D5ECCA500521328 /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		6759CC291D5ECCA500521328 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1703EC2C679B8171A56E369 /* Pods-WKSummer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKSummer/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		6759CC2A1D5ECCA500521328 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0FB9C9C541BF3002C22E65 /* Pods-WKSummer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKSummer/Info.plist;
@@ -496,6 +573,7 @@
 				6759CC2A1D5ECCA500521328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6759CC2B1D5ECCA500521328 /* Build configuration list for PBXNativeTarget "WKSummerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				6759CC2D1D5ECCA500521328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6759CC2E1D5ECCA500521328 /* Build configuration list for PBXNativeTarget "WKSummerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				6759CC301D5ECCA500521328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
